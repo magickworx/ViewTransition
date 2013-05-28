@@ -44,11 +44,13 @@
 #import "TransitionUIKitViewController.h"
 #import "TransitionQuartzCoreViewController.h"
 #import "PageViewController.h"
+#import "ScrollViewController.h"
 
 enum {
   kTransitionUIKit,
   kTransitionQuartzCore,
   kTransitionPageViewControl,
+  kTransitionScrollViewControl,
   kNumberOfTransitions
 };
 
@@ -87,7 +89,7 @@ enum {
 {
   [super viewDidLoad];
 
-  self.data = @[ @"UIKit", @"QuartzCore", @"PageViewController" ];
+  self.data = @[ @"UIKit", @"QuartzCore", @"PageViewController", @"ScrollView" ];
 
   UITableView *	tableView;
   tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
@@ -158,6 +160,12 @@ enum {
     case kTransitionPageViewControl: {
 	PageViewController *	vc;
 	vc = [PageViewController new];
+	viewController = vc;
+      }
+      break;
+    case kTransitionScrollViewControl: {
+	ScrollViewController *	vc;
+	vc = [ScrollViewController new];
 	viewController = vc;
       }
       break;

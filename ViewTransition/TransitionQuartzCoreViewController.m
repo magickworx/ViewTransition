@@ -86,13 +86,15 @@
 
   UIImageView *	imageView;
   imageView = [[UIImageView alloc]
-		initWithImage:[UIImage imageNamed:@"image1.jpg"]];
+		initWithImage:[UIImage imageNamed:@"image1.jpeg"]];
+  imageView.contentMode = UIViewContentModeScaleAspectFill;
   self.imageView1 = imageView;
   [self.view addSubview:imageView];
   [imageView release];
 
   imageView = [[UIImageView alloc]
-		initWithImage:[UIImage imageNamed:@"image2.jpg"]];
+		initWithImage:[UIImage imageNamed:@"image2.jpeg"]];
+  imageView.contentMode = UIViewContentModeScaleAspectFill;
   self.imageView2 = imageView;
   [imageView release];
 
