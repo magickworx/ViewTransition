@@ -1,7 +1,7 @@
 /*****************************************************************************
  *
- * FILE:	AppDelegate.h
- * DESCRIPTION:	ViewTransition: Application Main Controller
+ * FILE:	ContentsViewController.m
+ * DESCRIPTION:	ViewTransition: Contents View Controller for UIPageViewController
  * DATE:	Tue, May 28 2013
  * UPDATED:	Tue, May 28 2013
  * AUTHOR:	Kouichi ABE (WALL) / 阿部康一
@@ -36,18 +36,75 @@
  *   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  *   THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: AppDelegate.h,v 1.2 2013/01/22 15:23:51 kouichi Exp $
+ * $Id: ContentsViewController.m,v 1.2 2013/01/22 15:23:51 kouichi Exp $
  *
  *****************************************************************************/
 
-#import <UIKit/UIKit.h>
+#import "ContentsViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface ContentsViewController ()
 {
 @private
-  UIWindow *	_window;
+  UILabel *	_label;
+}
+@property (nonatomic,retain) UILabel *	label;
+@end
+
+@implementation ContentsViewController
+
+-(id)init
+{
+  self = [super init];
+  if (self) {
+    self.title = NSLocalizedString(@"ContentsViewController", @"");
+  }
+  return self;
 }
 
-@property (nonatomic,strong) UIWindow *	window;
+-(void)dealloc
+{
+  [_label release];
+  [super dealloc];
+}
+
+-(void)didReceiveMemoryWarning
+{
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
+}
+
+-(void)loadView
+{
+  [super loadView];
+
+  self.view.backgroundColor	= [UIColor whiteColor];
+
+  CGFloat	w = self.view.bounds.size.width;
+  CGFloat	h = 80.0f;
+  CGFloat	x = 0.0f;
+  CGFloat	y = (self.view.bounds.size.height - h) * 0.5f;
+
+  UILabel *	label;
+  label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, w, h)];
+  label.backgroundColor	= [UIColor clearColor];
+  label.textAlignment	= NSTextAlignmentCenter;
+  label.font = [UIFont boldSystemFontOfSize:32.0f];
+  label.text = @"Page#001";
+  [self.view addSubview:label];
+  self.label = label;
+  [label release];
+}
+
+-(void)viewDidLoad
+{
+  [super viewDidLoad];
+}
+
+/*****************************************************************************/
+
+-(void)setPageIndex:(NSInteger)pageIndex
+{
+  self.label.text = [NSString stringWithFormat:@"Page#%03d", pageIndex];
+}
 
 @end

@@ -16,6 +16,14 @@
 		B3C0FA69175461A4001FF70F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C0FA68175461A4001FF70F /* Default.png */; };
 		B3C0FA6B175461A4001FF70F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C0FA6A175461A4001FF70F /* Default@2x.png */; };
 		B3C0FA6D175461A4001FF70F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C0FA6C175461A4001FF70F /* Default-568h@2x.png */; };
+		B3C0FA7717546A3E001FF70F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0FA7417546A3E001FF70F /* RootViewController.m */; };
+		B3C0FA7817546A3E001FF70F /* TransitionUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0FA7617546A3E001FF70F /* TransitionUIKitViewController.m */; };
+		B3C0FA7C17546A51001FF70F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3C0FA7A17546A51001FF70F /* image1.jpg */; };
+		B3C0FA7D17546A51001FF70F /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3C0FA7B17546A51001FF70F /* image2.jpg */; };
+		B3C0FA8017546F96001FF70F /* TransitionQuartzCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0FA7F17546F96001FF70F /* TransitionQuartzCoreViewController.m */; };
+		B3C0FA8217546FA0001FF70F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C0FA8117546FA0001FF70F /* QuartzCore.framework */; };
+		B3C0FA8517547D39001FF70F /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0FA8417547D39001FF70F /* PageViewController.m */; };
+		B3C0FA8817547FE3001FF70F /* ContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C0FA8717547FE3001FF70F /* ContentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,19 @@
 		B3C0FA68175461A4001FF70F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B3C0FA6A175461A4001FF70F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B3C0FA6C175461A4001FF70F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B3C0FA7317546A3E001FF70F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B3C0FA7417546A3E001FF70F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B3C0FA7517546A3E001FF70F /* TransitionUIKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionUIKitViewController.h; sourceTree = "<group>"; };
+		B3C0FA7617546A3E001FF70F /* TransitionUIKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionUIKitViewController.m; sourceTree = "<group>"; };
+		B3C0FA7A17546A51001FF70F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		B3C0FA7B17546A51001FF70F /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		B3C0FA7E17546F96001FF70F /* TransitionQuartzCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionQuartzCoreViewController.h; sourceTree = "<group>"; };
+		B3C0FA7F17546F96001FF70F /* TransitionQuartzCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionQuartzCoreViewController.m; sourceTree = "<group>"; };
+		B3C0FA8117546FA0001FF70F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3C0FA8317547D39001FF70F /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		B3C0FA8417547D39001FF70F /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		B3C0FA8617547FE3001FF70F /* ContentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentsViewController.h; sourceTree = "<group>"; };
+		B3C0FA8717547FE3001FF70F /* ContentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C0FA8217546FA0001FF70F /* QuartzCore.framework in Frameworks */,
 				B3C0FA57175461A4001FF70F /* UIKit.framework in Frameworks */,
 				B3C0FA59175461A4001FF70F /* Foundation.framework in Frameworks */,
 				B3C0FA5B175461A4001FF70F /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +73,7 @@
 		B3C0FA4A175461A4001FF70F = {
 			isa = PBXGroup;
 			children = (
+				B3C0FA5D175461A4001FF70F /* Supporting Files */,
 				B3C0FA5C175461A4001FF70F /* ViewTransition */,
 				B3C0FA55175461A4001FF70F /* Frameworks */,
 				B3C0FA54175461A4001FF70F /* Products */,
@@ -68,6 +91,7 @@
 		B3C0FA55175461A4001FF70F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3C0FA8117546FA0001FF70F /* QuartzCore.framework */,
 				B3C0FA56175461A4001FF70F /* UIKit.framework */,
 				B3C0FA58175461A4001FF70F /* Foundation.framework */,
 				B3C0FA5A175461A4001FF70F /* CoreGraphics.framework */,
@@ -78,9 +102,18 @@
 		B3C0FA5C175461A4001FF70F /* ViewTransition */ = {
 			isa = PBXGroup;
 			children = (
+				B3C0FA8617547FE3001FF70F /* ContentsViewController.h */,
+				B3C0FA8717547FE3001FF70F /* ContentsViewController.m */,
+				B3C0FA8317547D39001FF70F /* PageViewController.h */,
+				B3C0FA8417547D39001FF70F /* PageViewController.m */,
+				B3C0FA7E17546F96001FF70F /* TransitionQuartzCoreViewController.h */,
+				B3C0FA7F17546F96001FF70F /* TransitionQuartzCoreViewController.m */,
+				B3C0FA7317546A3E001FF70F /* RootViewController.h */,
+				B3C0FA7417546A3E001FF70F /* RootViewController.m */,
+				B3C0FA7517546A3E001FF70F /* TransitionUIKitViewController.h */,
+				B3C0FA7617546A3E001FF70F /* TransitionUIKitViewController.m */,
 				B3C0FA65175461A4001FF70F /* AppDelegate.h */,
 				B3C0FA66175461A4001FF70F /* AppDelegate.m */,
-				B3C0FA5D175461A4001FF70F /* Supporting Files */,
 			);
 			path = ViewTransition;
 			sourceTree = "<group>";
@@ -88,6 +121,7 @@
 		B3C0FA5D175461A4001FF70F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3C0FA7917546A51001FF70F /* images */,
 				B3C0FA5E175461A4001FF70F /* ViewTransition-Info.plist */,
 				B3C0FA5F175461A4001FF70F /* InfoPlist.strings */,
 				B3C0FA62175461A4001FF70F /* main.m */,
@@ -97,7 +131,17 @@
 				B3C0FA6C175461A4001FF70F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = ViewTransition;
 			sourceTree = "<group>";
+		};
+		B3C0FA7917546A51001FF70F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B3C0FA7A17546A51001FF70F /* image1.jpg */,
+				B3C0FA7B17546A51001FF70F /* image2.jpg */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -154,6 +198,8 @@
 				B3C0FA69175461A4001FF70F /* Default.png in Resources */,
 				B3C0FA6B175461A4001FF70F /* Default@2x.png in Resources */,
 				B3C0FA6D175461A4001FF70F /* Default-568h@2x.png in Resources */,
+				B3C0FA7C17546A51001FF70F /* image1.jpg in Resources */,
+				B3C0FA7D17546A51001FF70F /* image2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +212,11 @@
 			files = (
 				B3C0FA63175461A4001FF70F /* main.m in Sources */,
 				B3C0FA67175461A4001FF70F /* AppDelegate.m in Sources */,
+				B3C0FA7717546A3E001FF70F /* RootViewController.m in Sources */,
+				B3C0FA7817546A3E001FF70F /* TransitionUIKitViewController.m in Sources */,
+				B3C0FA8017546F96001FF70F /* TransitionQuartzCoreViewController.m in Sources */,
+				B3C0FA8517547D39001FF70F /* PageViewController.m in Sources */,
+				B3C0FA8817547FE3001FF70F /* ContentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

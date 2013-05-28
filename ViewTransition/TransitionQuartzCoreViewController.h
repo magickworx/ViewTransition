@@ -1,7 +1,7 @@
 /*****************************************************************************
  *
- * FILE:	AppDelegate.h
- * DESCRIPTION:	ViewTransition: Application Main Controller
+ * FILE:	TransitionQuartzCoreViewController.h
+ * DESCRIPTION:	ViewTransition: Transition View Controller with QuarzCore
  * DATE:	Tue, May 28 2013
  * UPDATED:	Tue, May 28 2013
  * AUTHOR:	Kouichi ABE (WALL) / 阿部康一
@@ -36,18 +36,9 @@
  *   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  *   THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: AppDelegate.h,v 1.2 2013/01/22 15:23:51 kouichi Exp $
+ * $Id: TransitionQuartzCoreViewController.h,v 1.1 2013/01/15 19:37:50 kouichi Exp $
  *
  *****************************************************************************/
 
-#import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-@private
-  UIWindow *	_window;
-}
-
-@property (nonatomic,strong) UIWindow *	window;
-
+@interface TransitionQuartzCoreViewController : UIViewController
 @end
